@@ -1,0 +1,500 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-gray: #565c66;
+  --color-extra-dark: #2d3440;
+  --color-extra-light: #fcfcfc;
+  --color-pink: #ff2f64;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-gray);
+  margin: 0;
+  min-width: 1240px;
+  scroll-behavior: smooth;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 35px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 26px;
+  padding: 12px 32px;
+}
+
+.btn--white {
+  color: var(--color-extra-dark);
+  background-color: var(--color-extra-light);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.btn--pink {
+  color: var(--color-extra-light);
+  background-color: var(--color-pink);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.page--pink {
+  background-color: #FEAFC3;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: var(--color-extra-dark);
+}
+
+/* Для смены цвета Body */
+
+.page--yellow {
+  background-color: #FCC850;
+}
+
+.page--blue {
+  background-color: #69A9FF;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 25px;
+}
+
+.main-nav__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+}
+
+.logo {
+  padding-top: 3px;
+}
+
+.main-nav__link {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--color-extra-dark);
+  line-height: 20px;
+}
+
+.main-nav__phone {
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--color-extra-dark);
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.main-nav__list-btn {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item-btn {
+  margin-left: 16px;
+}
+
+.main-nav__btn {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-extra-dark);
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  border-radius: 30px;
+  padding: 6px 19px 6px 38px;
+}
+
+.main-nav__btn svg {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.main-nav__btn--search {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.main-nav__btn--search svg {
+  left: 8px;
+}
+
+.main-nav__item--dropdown .main-nav__link {
+  padding-right: 38px;
+  position: relative;
+}
+
+.main-nav__item--dropdown .main-nav__link::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/arrow-down.svg");
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background-repeat: no-repeat;
+}
+
+
+.slider__content-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: var(--color-extra-dark);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.slider__content-text {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-extra-dark);
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.slider__content-list {
+  list-style: none;
+  margin: 0;
+  width: 520px;
+  padding-left: 70px;
+}
+
+.slider__content-item {
+  padding-top: 130px;
+  padding-bottom: 30px;
+  display: none;
+}
+
+.slider__content-item--active {
+  display: block;
+}
+
+.slider__image-list {
+  padding-left: 24px;
+  padding-top: 14px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
+}
+
+.slider__image-item img {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.slider__image-item {
+  width: 100px;
+  opacity: 0.4;
+  position: relative;
+
+}
+
+.slider__image-item::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #ffcbd8;
+  position: absolute;
+}
+
+.slider__image-item--active {
+  width: 367px;
+  opacity: 1;
+}
+
+
+.slider__image-item--active img {
+  width: auto;
+  height: auto;
+}
+
+.slider__image-item--active::before {
+  width: 327px;
+  height: 312px;
+}
+
+.slider__image-item:last-child {
+  margin-left: 20px;
+}
+
+.slider__wrapper {
+  display: flex;
+}
+
+
+.slider__bullet {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: var(--color-extra-light);
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+.slider__bullet--active {
+  opacity: 1;
+}
+
+.slider__pagination {
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.slider__pagination-item {
+  margin-right: 8px;
+}
+
+
+.slider__arrows-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid var(--color-extra-light);
+  background-color: rgba(252, 252, 252, 0.3);
+  position: relative;
+}
+
+.slider__arrows-btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__arrows-btn:hover {
+  background-color: var(--color-extra-light);
+}
+
+.slider__arrows-btn:hover path {
+  fill: var(--color-extra-dark);
+}
+
+.slider__arrows-btn:active path {
+  fill: var(--color-extra-dark);
+}
+
+.slider__arrows-btn:active {
+  background: rgba(252, 252, 252, 0.5);
+  border: none;
+}
+
+.slider__arrows-btn:focus-visible {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
+.slider__arrows-btn:focus-visible path {
+  fill: var(--color-extra-dark);
+}
+
+.slider__arrows-btn:disabled {
+  opacity: 0.4;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid var(--color-extra-light);
+}
+
+.slider__arrows-btn:disabled path {
+  fill: var(--color-extra-light);
+}
+
+.slider__arrows {
+  width: 363px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 251px;
+  right: 315px;
+  z-index: 3;
+}
+
+.slider__container {
+  position: relative;
+}
+
+
+.social__list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 100px;
+  margin-top: -25px;
+}
+
+.social__link {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+.social__link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+.social__link--telegram::before {
+  background-image: url("../img/telegram.svg");
+}
+
+.social__link--vk::before {
+  background-image: url("../img/vk.svg");
+}
+
+.social__link--youtube::before {
+  background-image: url("../img/youtube.svg");
+}
+
+.social__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social__link:hover {
+  background-color: var(--color-extra-dark);
+}
+
+.social__link:active {
+  background-color: var(--color-extra-dark);
+  opacity: 0.5;
+}
+
+.social__link:focus-visible {
+  background-color: var(--color-extra-dark);
+  box-shadow: 0 0 0 2px var(--color-extra-dark);
+  outline: none;
+}
+
+.gift {
+  padding-top: 54px;
+}
+
+.gift__title {
+  margin-bottom: 53px;
+}
+
+.gift__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gift-card {
+  display: flex;
+  width: 570px;
+  background: #FF7799;
+  border-radius: 16px;
+}
+
+.gift-card__wrapper {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 36px;
+}
+
+.gift-card__title {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--color-extra-dark);
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.gift-card__desc {
+  color: var(--color-extra-dark);
+  margin-bottom: 27px;
+}
+
