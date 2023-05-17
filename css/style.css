@@ -81,6 +81,7 @@ main {
   font-weight: 700;
   border-radius: 26px;
   padding: 12px 32px;
+  font-family: "Inter", sans-serif;
 }
 
 .btn--white {
@@ -110,11 +111,11 @@ main {
 /* Для смены цвета Body */
 
 .page--yellow {
-  background-color: #FCC850;
+  background-color: #fcc850;
 }
 
 .page--blue {
-  background-color: #69A9FF;
+  background-color: #69a9ff;
 }
 
 .main-nav {
@@ -264,7 +265,6 @@ main {
   width: 100px;
   opacity: 0.4;
   position: relative;
-
 }
 
 .slider__image-item::before {
@@ -365,7 +365,7 @@ main {
 
 .slider__arrows-btn:focus-visible {
   background: rgba(252, 252, 252, 0.3);
-  border: 2px solid #2D3440;
+  border: 2px solid #2d3440;
   outline: none;
 }
 
@@ -475,7 +475,7 @@ main {
 .gift-card {
   display: flex;
   width: 570px;
-  background: #FF7799;
+  background: #ff7799;
   border-radius: 16px;
 }
 
@@ -496,6 +496,14 @@ main {
 .gift-card__desc {
   color: var(--color-extra-dark);
   margin-bottom: 27px;
+}
+
+.catalog {
+  padding-top: 56px;
+}
+
+.catalog__title {
+  margin-bottom: 55px;
 }
 
 .catalog__wrapper {
@@ -532,6 +540,13 @@ main {
   font-size: 20px;
   line-height: 24px;
   color: var(--color-extra-dark);
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+
+.product-card__desc {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .product-card__price {
@@ -539,4 +554,136 @@ main {
   line-height: 24px;
   color: var(--color-extra-dark);
   font-weight: 700;
+}
+
+.product-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card__buy {
+  display: block;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background-color: var(--color-pink);
+  border: 2px solid var(--color-pink);
+}
+
+.product-card__buy svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-card__buy:hover {
+  background: rgba(252, 252, 252, 0.3);
+}
+
+.product-card__buy:hover path {
+  fill: var(--color-extra-dark);
+}
+
+.product-card__buy:active {
+  background: #FFCBD8;
+}
+
+.product-card__buy:active path {
+  fill: var(--color-extra-dark);
+}
+
+.product-card__buy:focus-visible {
+  background: var(--color-pink);
+  border-color: var(--color-extra-dark);
+}
+
+.product-card__buy:focus-visible path {
+  fill: var(--color-extra-light);
+}
+
+.product-card__buy--disabled,
+.product-card__buy--disabled:hover,
+.product-card__buy--disabled:active,
+.product-card__buy--disabled:focus-visible {
+  background: #B9B9B9;
+  border-color: #B9B9B9;
+}
+
+.product-card__buy--disabled path,
+.product-card__buy--disabled:hover path,
+.product-card__buy--disabled:active path,
+.product-card__buy--disabled:focus-visible path {
+  fill: #565C66;
+}
+
+.advantages__wrapper {
+  background-image: url("../img/wafer.jpg");
+  border-radius: 16px;
+  padding: 24px;
+  background-size: cover;
+  background-position: center;
+}
+
+.advantages__inner {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding-left: 40px;
+  padding-right: 35px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+}
+
+.advantages__item {
+  padding-left: 64px;
+  position: relative;
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.advantages__item--ice::before {
+  background-image: url("../img/icon-icecream.svg");
+}
+
+.advantages__item--cow::before {
+  background-image: url("../img/cow.svg");
+}
+
+.advantages__item--leaflet::before {
+  background-image: url("../img/leaflet.svg");
+}
+
+.advantages__item--termo::before {
+  background-image: url("../img/termo.svg");
+}
+
+.advantages__title {
+  margin-top: 0;
+  padding-right: 2px;
+  margin-bottom: 56px;
+}
+
+.advantages {
+  margin-top: 80px;
 }
