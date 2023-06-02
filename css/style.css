@@ -398,15 +398,18 @@ main {
   position: relative;
 }
 
+.social--slider .social__list {
+  justify-content: flex-end;
+  margin-top: -25px;
+  padding-left: 100px;
+}
 
 .social__list {
   display: flex;
-  justify-content: flex-end;
   list-style: none;
   flex-wrap: wrap;
   margin: 0;
-  padding-left: 100px;
-  margin-top: -25px;
+  padding-left: 0;
 }
 
 .social__link {
@@ -893,9 +896,109 @@ main {
   margin-bottom: 32px;
 }
 
+.contacts {
+  margin-top: 80px;
+}
+
 .contacts__wrapper {
   background-image: url("../img/contacts-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
+  padding: 64px;
+}
+
+
+.contacts__content {
+  width: 343px;
+  background-color: var(--color-extra-light);
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.contacts__desc {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+
+.contacts__address {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-extra-dark);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-extra-dark);
+}
+
+.contacts__time {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.second-nav {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 6px;
+  list-style: none;
+  margin: 0;
+  width: 360px;
+  padding-left: 2px;
+}
+
+.second-nav__link {
+  text-decoration: none;
+  color: var(--color-extra-dark);
+  padding-left: 23px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.second-nav__link--hearth {
+  font-weight: 700;
+  position: relative;
+}
+
+.second-nav__link--hearth::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/hearth.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.copyright__desc {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-extra-dark);
+  margin-top: 11px;
+}
+
+.copyright__desc a {
+  color: var(--color-extra-dark);
 }
