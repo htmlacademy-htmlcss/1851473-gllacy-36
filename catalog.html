@@ -58,6 +58,124 @@
       </nav>
     </header>
     <main class="main">
+      <section class="inner-header container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">
+              Главная
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">
+              Каталог
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">
+              Сливочное мороженое
+            </a>
+          </li>
+        </ol>
+        <h1 class="inner-header__title">
+          Сливочное мороженое
+        </h1>
+      </section>
+      <section class="filter container">
+        <h2 class="visually-hidden">
+          Фильтр.
+        </h2>
+        <form action="https://echo.htmlacademy.ru/" class="form-filter" method="GET">
+          <fieldset class="form-filter__fieldset">
+            <legend class="form-filter__legend">
+              Сортировка:
+            </legend>
+            <select name="sort" id="sort" class="form-filter__select">
+              <option value="popular">
+                по популярности
+              </option>
+              <option value="price">
+                по цене
+              </option>
+            </select>
+          </fieldset>
+          <fieldset class="form-filter__fieldset">
+            <div class="form-filter__range-wrapper-inputs">
+              <span>Цена: </span>
+              <label class="form-filter__catalog-filter-label form-filter__catalog-filter-label--min">
+                <input class="form-filter__range-input" type="number" value="100" name="min-price"> ₽
+              </label> -
+              <label class="form-filter__catalog-filter-label form-filter__catalog-filter-label--max">
+                <input class="form-filter__range-input " type="number" value="500" name="max-price"> ₽
+              </label>
+            </div>
+            <div class="form-filter__range">
+              <div class="form-filter__range-scale">
+                <div class="form-filter__range-bar" style="left: 32px; width: 72px;">
+                  <button class="form-filter__range-toggle form-filter__range-toggle--min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="form-filter__range-toggle form-filter__range-toggle--max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-filter__fieldset">
+            <legend class="form-filter__legend">
+              Жирность:
+            </legend>
+            <ul class="form-filter__list">
+              <li class="form-filter__item">
+                <input type="radio" name="fat" value="0" id="fat0" class="visually-hidden form-filter__radio">
+                <label for="fat0" class="form-filter__label form-filter__label--radio"> 0%</label>
+              </li>
+              <li class="form-filter__item">
+                <input type="radio" name="fat" value="10" id="fat10" class="visually-hidden form-filter__radio" checked>
+                <label for="fat10" class="form-filter__label form-filter__label--radio">до 10%</label>
+              </li>
+              <li class="form-filter__item">
+                <input type="radio" name="fat" value="30" id="fat30" class="visually-hidden form-filter__radio">
+                <label for="fat30" class="form-filter__label form-filter__label--radio">до 30%</label>
+              </li>
+              <li class="form-filter__item">
+                <input type="radio" name="fat" value="over" id="over" class="visually-hidden form-filter__radio">
+                <label for="over" class="form-filter__label form-filter__label--radio"> выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-filter__fieldset">
+            <legend class="form-filter__legend">
+              Наполнители:
+            </legend>
+            <ul class="form-filter__list">
+              <li class="form-filter__item">
+                <input type="checkbox" name="fillers" value="chocolate" id="chocolate" class="visually-hidden form-filter__checkbox" checked>
+                <label for="chocolate" class="form-filter__label form-filter__label--checkbox">шоколадные </label>
+              </li>
+              <li class="form-filter__item">
+                <input type="checkbox" name="fillers" value="sugar" id="sugar" class="visually-hidden form-filter__checkbox" checked>
+                <label for="sugar" class="form-filter__label form-filter__label--checkbox">сахарные посыпки </label>
+              </li>
+              <li class="form-filter__item">
+                <input type="checkbox" name="fillers" value="fruts" id="fruts" class="visually-hidden form-filter__checkbox">
+                <label for="fruts" class="form-filter__label form-filter__label--checkbox">фрукты </label>
+              </li>
+              <li class="form-filter__item">
+                <input type="checkbox" name="fillers" value="syrup" id="syrup" class="visually-hidden form-filter__checkbox">
+                <label for="syrup" class="form-filter__label form-filter__label--checkbox">сиропы </label>
+              </li>
+              <li class="form-filter__item">
+                <input type="checkbox" name="fillers" value="jam" id="jam" class="visually-hidden form-filter__checkbox">
+                <label for="jam" class="form-filter__label form-filter__label--checkbox">джемы </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn form-filter__submit">
+            Применить
+          </button>
+        </form>
+      </section>
       <section class="catalog">
         <div class="catalog__container container">
           <div class="catalog__wrapper">
