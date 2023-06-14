@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon-32.png">
     <link rel="stylesheet" href="css/style.css">
     <title>gllacy</title>
   </head>
@@ -598,7 +600,7 @@
             <span class="contacts__time">
               (с 10 до 20 ежедневно)
             </span>
-            <button type="button" class="contacts__btn btn btn--pink">
+            <button type="button" class="contacts__btn btn btn--pink" id="modal-btn">
               Форма обратной связи
             </button>
           </div>
@@ -664,9 +666,9 @@
         </p>
       </div>
     </footer>
-    <div class="modal modal--close">
+    <div class="modal modal--close" id="modal">
       <div class="modal__wrapper">
-        <button class="modal__btn-close" aria-label="Закрыть." type="button">
+        <button class="modal__btn-close" id="modal-close" aria-label="Закрыть." type="button">
         </button>
         <div class="modal__content">
           <form action="https://echo.htmlacademy.ru/" class="form form--modal" method="POST">
@@ -698,5 +700,6 @@
         </div>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
