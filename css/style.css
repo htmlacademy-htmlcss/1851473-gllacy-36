@@ -131,13 +131,13 @@ main {
 }
 
 .btn--pink:focus-visible {
-  background: #FF2F64;
+  background: #ff2f64;
   box-shadow: 0 0 0 2px var(--color-extra-dark), 0 4px 12px rgba(45, 52, 64, 0.1);
   outline: none;
 }
 
 .page--pink {
-  background-color: #FEAFC3;
+  background-color: #feafc3;
 }
 
 .title {
@@ -148,7 +148,7 @@ main {
   color: var(--color-extra-dark);
 }
 
-/* Для смены цвета Body */
+/* Для смены цвета body */
 
 .page--yellow {
   background-color: #fcc850;
@@ -662,7 +662,7 @@ main {
 }
 
 .product-card__buy:active {
-  background: #FFCBD8;
+  background: #ffcbd8;
 }
 
 .product-card__buy:active path {
@@ -682,15 +682,15 @@ main {
 .product-card__buy--disabled:hover,
 .product-card__buy--disabled:active,
 .product-card__buy--disabled:focus-visible {
-  background: #B9B9B9;
-  border-color: #B9B9B9;
+  background: #b9b9b9;
+  border-color: #b9b9b9;
 }
 
 .product-card__buy--disabled path,
 .product-card__buy--disabled:hover path,
 .product-card__buy--disabled:active path,
 .product-card__buy--disabled:focus-visible path {
-  fill: #565C66;
+  fill: #565c66;
 }
 
 .advantages__wrapper {
@@ -810,7 +810,7 @@ main {
   width: 100%;
   max-width: 100%;
   height: 48px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #b9b9b9;
   border-radius: 4px;
   background: #ffffff;
   font: inherit;
@@ -832,17 +832,17 @@ main {
 
 /* состояние для ошибки */
 .form__input--error {
-  border: 1px solid #EA5454;
+  border: 1px solid #ea5454;
 }
 
 .form__input--error:hover {
-  border: 1px solid #EA5454;
+  border: 1px solid #ea5454;
   box-shadow: 0 0 0 1px #ea5454;
 }
 
 .form__input:disabled {
-  background: #E7E7E7;
-  border: 1px solid #B9B9B9;
+  background: #e7e7e7;
+  border: 1px solid #b9b9b9;
 }
 
 .form__field--email {
@@ -850,7 +850,7 @@ main {
 }
 
 .form__input::placeholder {
-  color: #B9B9B9;
+  color: #b9b9b9;
   opacity: 1;
 }
 
@@ -947,7 +947,7 @@ main {
   background: var(--color-extra-light);
   box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
   border-radius: 2px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #b9b9b9;
   font-size: 12px;
   line-height: 16px;
   padding: 10px 8px;
@@ -973,8 +973,8 @@ main {
   transform: rotate(-135deg);
   top: 12px;
   left: -6px;
-  border-top: 1px solid #B9B9B9;
-  border-right: 1px solid #B9B9B9;
+  border-top: 1px solid #b9b9b9;
+  border-right: 1px solid #b9b9b9;
   background-color: var(--color-extra-light);
 }
 
