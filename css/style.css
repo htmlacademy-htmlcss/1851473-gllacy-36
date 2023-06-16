@@ -63,6 +63,20 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Для смены цвета body */
+
+.page--yellow {
+  background-color: #fcc850;
+}
+
+.page--blue {
+  background-color: #69a9ff;
+}
+
+.page--pink {
+  background-color: #feafc3;
+}
+
 main {
   flex-grow: 1;
 }
@@ -136,26 +150,12 @@ main {
   outline: none;
 }
 
-.page--pink {
-  background-color: #feafc3;
-}
-
 .title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
   color: var(--color-extra-dark);
-}
-
-/* Для смены цвета body */
-
-.page--yellow {
-  background-color: #fcc850;
-}
-
-.page--blue {
-  background-color: #69a9ff;
 }
 
 .main-nav {
@@ -167,10 +167,12 @@ main {
 
 .main-nav__list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
   margin-left: 16px;
+  max-width: 550px;
 }
 
 .logo {
@@ -205,6 +207,7 @@ main {
   color: var(--color-extra-dark);
   text-decoration: none;
   margin-left: auto;
+  flex-shrink: 0;
 }
 
 .main-nav__phone:hover {
@@ -216,10 +219,14 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
+  max-width: 300px;
+  flex-wrap: wrap;
 }
 
 .main-nav__item-btn {
   margin-left: 16px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .main-nav__btn {
@@ -518,6 +525,11 @@ main {
   margin-right: 16px;
 }
 
+.social__item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .social__link:hover {
   background-color: var(--color-extra-dark);
 }
@@ -534,7 +546,7 @@ main {
 }
 
 .gift {
-  padding-top: 54px;
+  padding-top: 44px;
 }
 
 .gift__title {
@@ -570,6 +582,10 @@ main {
 .gift-card__desc {
   color: var(--color-extra-dark);
   margin-bottom: 27px;
+}
+
+.gift-card__images {
+  align-self: flex-end;
 }
 
 .catalog {
@@ -638,6 +654,7 @@ main {
 
 .product-card__buy {
   display: block;
+  flex-shrink: 0;
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -678,12 +695,15 @@ main {
   fill: var(--color-extra-light);
 }
 
+/* состояние disabled для кнопки покупки в товаре*/
+
 .product-card__buy--disabled,
 .product-card__buy--disabled:hover,
 .product-card__buy--disabled:active,
 .product-card__buy--disabled:focus-visible {
   background: #b9b9b9;
   border-color: #b9b9b9;
+  cursor: default;
 }
 
 .product-card__buy--disabled path,
@@ -777,6 +797,7 @@ main {
   border-radius: 16px;
   padding: 32px 230px 32px 32px;
   min-height: 224px;
+  background-color: #ffffff;
 }
 
 .blog__desc {
@@ -879,6 +900,7 @@ main {
   background-size: cover;
   border-radius: 16px;
   padding: 64px 64px 64px 100px;
+  background-color: #f5f5f5;
 }
 
 .delivery__content {
@@ -1001,6 +1023,8 @@ main {
   background-size: cover;
   border-radius: 16px;
   padding: 64px;
+  background-position: center;
+  background-color: #eee2e2;
 }
 
 
@@ -1055,6 +1079,10 @@ main {
   padding-bottom: 48px;
 }
 
+.footer__social {
+  max-width: 200px;
+}
+
 .second-nav {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -1095,6 +1123,10 @@ main {
   background-position: center;
 }
 
+.copyright {
+  max-width: 220px;
+}
+
 .copyright__desc {
   margin: 0;
   font-size: 12px;
@@ -1121,6 +1153,7 @@ main {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs__link {
@@ -1338,6 +1371,7 @@ main {
   padding: 8px 24px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
+  flex-wrap: wrap;
 }
 
 .form-filter__item:not(:last-child) {
@@ -1497,6 +1531,7 @@ main {
   display: flex;
   margin: 0;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .pagination__link {
@@ -1536,6 +1571,7 @@ main {
   align-items: center;
   width: 503px;
   justify-content: flex-end;
+  padding-left: 10px;
 }
 
 .pagination__arrow {
@@ -1543,6 +1579,7 @@ main {
   height: 16px;
   display: block;
   background-image: url("../img/arrow-down.svg");
+  flex-shrink: 0;
 }
 
 .pagination__arrow--back {
@@ -1707,6 +1744,7 @@ main {
   margin-bottom: 32px;
 }
 
+
 .form--login .form__input {
   width: 100%;
 }
@@ -1734,6 +1772,10 @@ main {
   font-size: 14px;
   line-height: 20px;
   color: var(--color-extra-dark);
+}
+
+.form__input--date {
+  padding-right: 3px;
 }
 
 .form__link:hover {
