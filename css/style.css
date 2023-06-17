@@ -77,7 +77,7 @@ body {
   background-color: #feafc3;
 }
 
-main {
+.main {
   flex-grow: 1;
 }
 
@@ -563,6 +563,17 @@ main {
   width: 570px;
   background: #ff7799;
   border-radius: 16px;
+  padding-right: 219px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.gift-card--raspberries {
+  background-image: url("../img/raspberries.png");
+}
+
+.gift-card--marshmallow {
+  background-image: url("../img/marshmallow.png");
 }
 
 .gift-card__wrapper {
@@ -1573,6 +1584,10 @@ main {
   width: 503px;
   justify-content: flex-end;
   padding-left: 10px;
+}
+
+.pagination__btn {
+  width: 179px;
 }
 
 .pagination__arrow {
