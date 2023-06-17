@@ -13,7 +13,7 @@
     <header class="header container">
       <nav class="main-nav">
         <a href="#" class="logo">
-          <img src="img/logo.svg" alt="Логотип." class="logo__img">
+          <img src="img/logo.svg" alt="Логотип." class="logo__img" width="137" height="56">
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--dropdown">
@@ -306,7 +306,7 @@
             Заказывайте мороженое <br> и получайте подарки!
           </h2>
           <div class="gift__wrapper">
-            <div class="gift-card">
+            <div class="gift-card gift-card--raspberries">
               <div class="gift-card__wrapper">
                 <h3 class="gift-card__title">
                   Малинка даром!
@@ -318,9 +318,8 @@
                   Хочу подарок
                 </a>
               </div>
-              <img src="img/raspberries.png" alt="Малиновое мороженное." class="gift-card__images">
             </div>
-            <div class="gift-card">
+            <div class="gift-card gift-card--marshmallow">
               <div class="gift-card__wrapper">
                 <h3 class="gift-card__title">
                   Маршмеллоу даром!
@@ -332,7 +331,6 @@
                   Хочу подарок
                 </a>
               </div>
-              <img src="img/marshmallow.png" alt="Зефирное мороженное." class="gift-card__images">
             </div>
           </div>
         </div>
@@ -346,7 +344,7 @@
             <div class="product-card">
               <div class="product-card__wrapper">
                 <a href="#" class="product-card__img">
-                  <img src="img/products/product-1.jpg" alt="Малиновый пломбир.">
+                  <img src="img/products/product-1.jpg" alt="Малиновый пломбир." width="168" height="168">
                 </a>
                 <h3 class="product-card__title">
                   Малинка
@@ -373,7 +371,7 @@
             <div class="product-card">
               <div class="product-card__wrapper">
                 <a href="#" class="product-card__img">
-                  <img src="img/products/product-2.jpg" alt="Фисташковый пломбир.">
+                  <img src="img/products/product-2.jpg" alt="Фисташковый пломбир." width="168" height="168">
                 </a>
                 <h3 class="product-card__title">
                   Фисташка
@@ -400,7 +398,7 @@
             <div class="product-card">
               <div class="product-card__wrapper">
                 <a href="#" class="product-card__img">
-                  <img src="img/products/product-3.jpg" alt="Черничный пломбир.">
+                  <img src="img/products/product-3.jpg" alt="Черничный пломбир." width="168" height="168">
                 </a>
                 <h3 class="product-card__title">
                   Черника
@@ -427,7 +425,7 @@
             <div class="product-card">
               <div class="product-card__wrapper">
                 <a href="#" class="product-card__img">
-                  <img src="img/products/product-4.jpg" alt="пломбир жвачка.">
+                  <img src="img/products/product-4.jpg" alt="пломбир жвачка." width="168" height="168">
                 </a>
                 <h3 class="product-card__title">
                   Бабл-гам
@@ -600,9 +598,9 @@
             <span class="contacts__time">
               (с 10 до 20 ежедневно)
             </span>
-            <button type="button" class="contacts__btn btn btn--pink" id="modal-btn">
+            <a href="#" class="contacts__btn btn btn--pink" id="modal-btn">
               Форма обратной связи
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -688,7 +686,7 @@
               </label>
             </div>
             <div class="form__field">
-              <textarea name="message" id="message" placeholder="В свободной форме" class="form__input form__input--text-area"></textarea>
+              <textarea name="message" id="message" placeholder="В свободной форме" class="form__input form__input--text-area" required></textarea>
               <label for="message" class="visually-hidden">
                 Введите сообщение.
               </label>

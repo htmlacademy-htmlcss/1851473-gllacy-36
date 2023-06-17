@@ -2,7 +2,8 @@ const modalBtn = document.getElementById('modal-btn');
 const modal = document.getElementById('modal');
 const modalCloseBtn = document.getElementById('modal-close');
 
-function openModal () {
+function openModal (event) {
+  event.preventDefault();
   modal.classList.remove('modal--close')
 }
 
