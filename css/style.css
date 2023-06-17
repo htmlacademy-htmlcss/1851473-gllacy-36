@@ -798,6 +798,7 @@ main {
   padding: 32px 230px 32px 32px;
   min-height: 224px;
   background-color: #ffffff;
+  background-position: center;
 }
 
 .blog__desc {
